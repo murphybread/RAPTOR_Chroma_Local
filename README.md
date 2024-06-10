@@ -1,4 +1,6 @@
 LLM을 이용한 개인 지식데이터베이스인 RAG기술중 Meta에서 만든 엄청 효율적이고 뛰어난 RAPTOR(Recursive Abstractive Processing for Tree-Organized)라는 논문을 llama index의 내부 ChromaDB를 통해 구현한 예제입니다.
+https://arxiv.org/html/2401.18059v1
+
 
 방법자체는 이해하기 쉽게 말하자면 Low레벨은 기본적으로 원본그대로 내용을 가지고 있고 high레벨로 갈수록 low 레벨들의 클러스트로 묶은 요약본을 찾는 형태입니다. 여기서 각 묶음 단위는 chunk사이즈로 생각하면 됩니다.
 예를들어 해리포터 1~10권을 RAPTOR로 구성한다라면 0레벨 원본 chunk 10개, 1레벨 총 요약본 chunk1개 입니다.
